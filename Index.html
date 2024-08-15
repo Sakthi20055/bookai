@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white dark:bg-gray-800 p-4 shadow-md fixed w-full top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold ">Relaince Jio</a>
+            <button id="theme-toggle" class="text-gray-600 dark:text-gray-300 focus:outline-none">
+                 Dark Mode
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="mt-20">
+        <!-- Pricing Section -->
+        <section class="pricing-section p-8">
+            <h2 class="text-4xl font-bold text-center">Our Monthly Plans</h2>
+            <div class="pricing-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <!-- Basic Plan -->
+                <div class="pricing-card p-6 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg text-center">
+                    <h3 class="text-2xl font-semibold">Basic Plan</h3>
+                    <p class="text-xl mt-4">$19/month</p>
+                    <ul class="mt-4 space-y-2">
+                        <li>Limited Calls</li>
+                        <li>1GB Data</li>
+                        <li>50SmS/perday</li>
+                    </ul>
+                    <button class="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Sign Up</button>
+                </div>
+                <!-- Standard Plan -->
+                <div class="pricing-card p-6 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg text-center">
+                    <h3 class="text-2xl font-semibold">Standard Plan</h3>
+                    <p class="text-xl mt-4">$49/month</p>
+                    <ul class="mt-4 space-y-2">
+                        <li>Unlimiited Calls</li>
+                        <li>2GB Data/Perday</li>
+                        <li>100Sms/perday</li>
+                    </ul>
+                    <button class="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Sign Up</button>
+                </div>
+                <!-- Premium Plan -->
+                <div class="pricing-card p-6 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg text-center">
+                    <h3 class="text-2xl font-semibold">Premium Plan</h3>
+                    <p class="text-xl mt-4">$99/month</p>
+                    <ul class="mt-4 space-y-2">
+                        <li>3GB/perday</li>
+                        <li>Unlimited Calls</li>
+                        <li>OTT Subscription</li>
+                    </ul>
+                    <button class="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Sign Up</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Theme Toggle -->
+    <script src="index.js"></script>
+</body>
+</html>
